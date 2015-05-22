@@ -4,7 +4,7 @@
     tasks:
 
       - name: Install gem mysql2
-        gem: name=mysql2 state=latest
+        shell: gem install mysql2
 
       - name: populate mysql2 data with fixtures
         shell: ./fixtures/bin/fixtures populate
