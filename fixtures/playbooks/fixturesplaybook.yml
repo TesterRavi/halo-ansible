@@ -1,0 +1,10 @@
+---
+  - hosts: all
+    user: root
+    tasks:
+
+      - name: Install gem mysql2
+        gem: name=mysql2 state=latest
+
+      - name: populate mysql2 data with fixtures
+        shell: ./fixtures/bin/fixtures populate
