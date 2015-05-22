@@ -1,5 +1,5 @@
 ---
-  - hosts: $servername
+  - hosts: 104.236.173.217
     user: root
     tasks:
 
